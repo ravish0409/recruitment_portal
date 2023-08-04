@@ -1,0 +1,47 @@
+ 
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h1 class="mb-4">Job Search</h1>
+            
+            <form method="POST">
+                {% csrf_token %}
+                {% for field in form %}
+                <div class="mb-3">
+                    <label for="{{ field.id_for_label }}" class="form-label">{{ field.label }}</label>
+                    {{ field }}
+                </div>
+                {% endfor %}
+
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-4">
+        <div class=" col-md-8">
+            <h2>Search Results</h2>
+            <ul class=" list-group">
+                {% for job in jobs %}
+                <br>
+                <li class=" card list-group-item">
+                    <strong>Skills Required:</strong> {{ job.skills_required }}<br><br>
+                    <strong>Title:</strong> {{ job.title }}<br><br>
+                    <strong>Location:</strong> {{ job.location }}<br><br>
+                    <strong>Description:</strong> {{ job.description }}<br><br>
+                    <strong>Experience Level:</strong> {{ job.experience_level }}<br>
+                </li>
+
+                {% empty %}
+                <li class="list-group-item">No jobs found.</li>
+                <br><br>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

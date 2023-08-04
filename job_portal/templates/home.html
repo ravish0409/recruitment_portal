@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-6 text-center animated-div">
+        <h1>Welcome to the Recruitment Portal</h1>
+        <p>Explore our platform for exciting job opportunities.</p>
+        <a href="{% url 'job_search' %}" class="btn btn-primary btn-lg">Job Search</a>
+    </div>
+    <div class="col-md-6 text-center animated-div">
+        <h1>Create your Profile</h1>
+        <p>Get started by creating your candidate profile.</p>
+        <a href="{% url 'candidate_profile' %}" class="btn btn-primary btn-lg">Create Profile</a>
+    </div>
+</div>
+
+{% endblock %}
