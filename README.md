@@ -26,6 +26,7 @@ git clone https://github.com/ravish0409/recruitment_portal.git
 cd recruitment_portal
 
 python -m venv env
+
 env\Scripts\activate
 
 pip install -r requirements.txt
