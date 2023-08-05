@@ -13,7 +13,7 @@ class CandidateProfileForm(forms.ModelForm):
             'name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter your name'}),
             'email': forms.EmailInput(attrs={'class': 'form-control', 'placeholder': 'Enter your email'}),
             'skills': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter your skills'}),
-            'experience': forms.Select(attrs={'class': 'form-control'})
+            'experience': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter your skills'})
         }
 
     
