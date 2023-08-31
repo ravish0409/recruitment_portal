@@ -6,13 +6,12 @@ The project is a recruitment startup's web portal developed using Django, a popu
 
 ### Home Page
 
-The home page serves as the landing page for the portal. It provides a warm welcome message and encourages users to explore job opportunities and create candidate profiles. The home page also contains two prominent buttons:
+The home page serves as the landing page for the portal. users can explore job opportunities and create candidate profiles. The home page also contains two prominent buttons:
 
 - __Job Search__: This button leads users to the job search page, where they can search for job opportunities based on specific criteria.
 
-- __Create Candidate Profile__: This button directs users to the candidate profile creation page, where they can showcase their skills and experience.
+- __Create Candidate Profile__: This button directs users to the candidate profile creation page, where user can showcase their skills and experience.
 
-Feel free to customize the content and style to match your project's design and requirements.
 
 
 
